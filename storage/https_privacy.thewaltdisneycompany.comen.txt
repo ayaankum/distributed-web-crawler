@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<!-- OneTrust Cookies Consent Notice start -->
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-document-language="true" data-domain-script="5a13b7b2-0898-4109-a855-793b7b1196fa"></script>
+<script>
+    function OptanonWrapper() {
+        OneTrust.OnConsentChanged(function() {
+            location.reload(true);
+       });
+    };
+</script>
+<!-- OneTrust Cookies Consent Notice end -->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"129fe16bc0",applicationID:"191794594"};;(()=>{var e,t,r={9071:(e,t,r)=>{"use strict";r.d(t,{I:()=>n});var n=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(n=+i[1])},6562:(e,t,r)=>{"use strict";r.d(t,{P_:()=>p,Mt:()=>v,C5:()=>d,DL:()=>y,OP:()=>N,lF:()=>B,Yu:()=>A,Dg:()=>h,CX:()=>f,GE:()=>w,sU:()=>M});var n={};r.r(n),r.d(n,{agent:()=>x,match:()=>j,version:()=>O});var i=r(6797),o=r(909),a=r(8610);class s{constructor(e,t){try{if(!e||"object"!=typeof e)return(0,a.Z)("New setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,a.Z)("Setting a Configurable requires a model to set its initial properties");Object.assign(this,t),Object.entries(e).forEach((e=>{let[t,r]=e;const n=(0,o.q)(t);n.length&&r&&"object"==typeof r&&n.forEach((e=>{e in r&&((0,a.Z)('"'.concat(e,'" is a protected attribute and can not be changed in feature ').concat(t,".  It will have no effect.")),delete r[e])})),this[t]=r}))}catch(e){(0,a.Z)("An error occured while setting a Configurable",e)}}}const c={beacon:i.ce.beacon,errorBeacon:i.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},u={};function d(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!u[e])throw new Error("Info for ".concat(e," was never set"));return u[e]}function f(e,t){if(!e)throw new Error("All info objects require an agent identifier!");u[e]=new s(t,c),(0,i.Qy)(e,u[e],"info")}const l={allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0,harvestTimeSeconds:10},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30},session_trace:{enabled:!0,harvestTimeSeconds:10},spa:{enabled:!0,harvestTimeSeconds:10}},g={};function p(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!g[e])throw new Error("Configuration for ".concat(e," was never set"));return g[e]}function h(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");g[e]=new s(t,l),(0,i.Qy)(e,g[e],"config")}function v(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var r=p(e);if(r){for(var n=t.split("."),i=0;i<n.length-1;i++)if("object"!=typeof(r=r[n[i]]))return;r=r[n[n.length-1]]}return r}const m={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},b={};function y(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!b[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return b[e]}function w(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");b[e]=new s(t,m),(0,i.Qy)(e,b[e],"loader_config")}const A=(0,i.mF)().o;var E=r(2053),x=null,O=null;if(navigator.userAgent){var T=navigator.userAgent,S=T.match(/Version\/(\S+)\s+Safari/);S&&-1===T.indexOf("Chrome")&&-1===T.indexOf("Chromium")&&(x="Safari",O=S[1])}function j(e,t){if(!x)return!1;if(e!==x)return!1;if(!t)return!0;if(!O)return!1;for(var r=O.split("."),n=t.split("."),i=0;i<n.length;i++)if(n[i]!==r[i])return!1;return!0}var D=r(5526),_=r(2374);const k="NRBA_SESSION_ID";function P(){if(!_.il)return null;try{let e;return null===(e=window.sessionStorage.getItem(k))&&(e=(0,D.ky)(16),window.sessionStorage.setItem(k,e)),e}catch(e){return null}}var I=r(8226);const C=e=>({customTransaction:void 0,disabled:!1,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:(0,E.yf)(),onerror:void 0,origin:""+_._A.location,ptid:void 0,releaseIds:{},sessionId:1==v(e,"privacy.cookies_enabled")?P():null,xhrWrappable:"function"==typeof _._A.XMLHttpRequest?.prototype?.addEventListener,userAgent:n,version:I.q}),R={};function N(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!R[e])throw new Error("Runtime for ".concat(e," was never set"));return R[e]}function M(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");R[e]=new s(t,C(e)),(0,i.Qy)(e,R[e],"runtime")}function B(e){return function(e){try{const t=d(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},8226:(e,t,r)=>{"use strict";r.d(t,{q:()=>n});const n="1226.PROD"},9557:(e,t,r)=>{"use strict";r.d(t,{w:()=>o});var n=r(8610);const i={agentIdentifier:""};class o{constructor(e){try{if("object"!=typeof e)return(0,n.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,r]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=r)}))}catch(e){(0,n.Z)("An error occured while setting SharedContext",e)}}}},4329:(e,t,r)=>{"use strict";r.d(t,{L:()=>d,R:()=>c});var n=r(3752),i=r(7022),o=r(4045),a=r(2325);const s={};function c(e,t){const r={staged:!1,priority:a.p[t]||0};u(e),s[e].get(t)||s[e].set(t,r)}function u(e){e&&(s[e]||(s[e]=new Map))}function d(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(u(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const r=Array.from(s[e]);function a(t){const r=e?n.ee.get(e):n.ee,a=o.X.handlers;if(r.backlog&&a){var s=r.backlog[t],c=a[t];if(c){for(var u=0;s&&u<s.length;++u)f(s[u],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,r){r[0].on(e,r[1])}))}))}delete a[t],r.backlog[t]=null,r.emit("drain-"+t,[])}}r.every((e=>{let[t,r]=e;return r.staged}))&&(r.sort(((e,t)=>e[1].priority-t[1].priority)),r.forEach((e=>{let[t]=e;a(t)})))}function f(e,t){var r=e[1];(0,i.D)(t[r],(function(t,r){var n=e[0];if(r[0]===n){var i=r[1],o=e[3],a=e[2];i.apply(o,a)}}))}},3752:(e,t,r)=>{"use strict";r.d(t,{c:()=>f,ee:()=>u});var n=r(6797),i=r(3916),o=r(7022),a=r(6562),s="nr@context";let c=(0,n.fP)();var u;function d(){}function f(e){return(0,i.X)(e,s,l)}function l(){return new d}function g(){(u.backlog.api||u.backlog.feature)&&(u.aborted=!0,u.backlog={})}c.ee?u=c.ee:(u=function e(t,r){var n={},c={},f={},p=!1;try{p=16===r.length&&(0,a.OP)(r).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:y,emit:m,get:A,listeners:w,context:v,buffer:E,abort:g,aborted:!1,isBuffering:x,debugId:r,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function v(e){return e&&e instanceof d?e:e?(0,i.X)(e,s,l):l()}function m(e,r,n,i,o){if(!1!==o&&(o=!0),!u.aborted||i){t&&o&&t.emit(e,r,n);for(var a=v(n),s=w(e),d=s.length,f=0;f<d;f++)s[f].apply(a,r);var l=O()[c[e]];return l&&l.push([h,e,r,a]),a}}function b(e,t){n[e]=w(e).concat(t)}function y(e,t){var r=n[e];if(r)for(var i=0;i<r.length;i++)r[i]===t&&r.splice(i,1)}function w(e){return n[e]||[]}function A(t){return f[t]=f[t]||e(h,t)}function E(e,t){var r=O();h.aborted||(0,o.D)(e,(function(e,n){t=t||"feature",c[n]=t,t in r||(r[t]=[])}))}function x(e){return!!O()[c[e]]}function O(){return h.backlog}}(void 0,"globalEE"),c.ee=u)},9252:(e,t,r)=>{"use strict";r.d(t,{E:()=>n,p:()=>i});var n=r(3752).ee.get("handle");function i(e,t,r,i,o){o?(o.buffer([e],i),o.emit(e,t,r)):(n.buffer([e],i),n.emit(e,t,r))}},4045:(e,t,r)=>{"use strict";r.d(t,{X:()=>o});var n=r(9252);o.on=a;var i=o.handlers={};function o(e,t,r,o){a(o||n.E,i,e,t,r)}function a(e,t,r,i,o){o||(o="feature"),e||(e=n.E);var a=t[o]=t[o]||{};(a[r]=a[r]||[]).push([e,i])}},8544:(e,t,r)=>{"use strict";r.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var n=r(2374);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};n._A.addEventListener("test",null,e),n._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];window.addEventListener(e,t,a(r))}function c(e,t){let r=arguments.length>2&&void 0!==arguments[2]&&arguments[2];document.addEventListener(e,t,a(r))}},5526:(e,t,r)=>{"use strict";r.d(t,{Ht:()=>a,M:()=>o,Rl:()=>i,ky:()=>s});var n=r(2374);function i(){var e=null,t=0,r=n._A?.crypto||n._A?.msCrypto;function i(){return e?15&e[t++]:16*Math.random()|0}r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,a="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",s="",c=0;c<a.length;c++)s+="x"===(o=a[c])?i().toString(16):"y"===o?(o=3&i()|8).toString(16):o;return s}function o(){return s(16)}function a(){return s(32)}function s(e){var t=null,r=0,n=self.crypto||self.msCrypto;n&&n.getRandomValues&&Uint8Array&&(t=n.getRandomValues(new Uint8Array(31)));for(var i=[],o=0;o<e;o++)i.push(a().toString(16));return i.join("");function a(){return t?15&t[r++]:16*Math.random()|0}}},2053:(e,t,r)=>{"use strict";r.d(t,{nb:()=>c,os:()=>u,yf:()=>s,zO:()=>a});var n=r(7145),i=(new Date).getTime(),o=i;function a(){return n.G&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-o}function s(){return i}function c(e){o=e}function u(){return o}},7145:(e,t,r)=>{"use strict";r.d(t,{G:()=>n});const n=void 0!==r(2374)._A?.performance?.timing?.navigationStart},6625:(e,t,r)=>{"use strict";r.d(t,{s:()=>c,v:()=>u});var n=r(8283),i=r(9071),o=r(2053),a=r(7145),s=r(2374);let c=!0;function u(e){var t=function(){if(i.I&&i.I<9)return;if(a.G)return c=!1,s._A?.performance?.timing?.navigationStart}();t&&((0,n.B)(e,"starttime",t),(0,o.nb)(t))}},8283:(e,t,r)=>{"use strict";r.d(t,{B:()=>o,L:()=>a});var n=r(2053),i={};function o(e,t,r){void 0===r&&(r=(0,n.zO)()+(0,n.os)()),i[e]=i[e]||{},i[e][t]=r}function a(e,t,r,n){const o=e.sharedContext.agentIdentifier;var a=i[o]?.[r],s=i[o]?.[n];void 0!==a&&void 0!==s&&e.store("measures",t,{value:s-a})}},9548:(e,t,r)=>{"use strict";r.d(t,{T:()=>i});var n=r(2374);const i={isFileProtocol:function(){let e=Boolean("file:"===(0,n.lW)()?.location?.protocol);e&&(i.supportabilityMetricSent=!0);return e},supportabilityMetricSent:!1}},8610:(e,t,r)=>{"use strict";function n(e,t){console&&console.warn&&"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}r.d(t,{Z:()=>n})},3916:(e,t,r)=>{"use strict";r.d(t,{X:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t,r){if(n.call(e,t))return e[t];var i=r();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},2374:(e,t,r)=>{"use strict";r.d(t,{_A:()=>o,il:()=>n,lW:()=>a,v6:()=>i});const n=Boolean("undefined"!=typeof window&&window.document),i=Boolean("undefined"!=typeof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator);let o=(()=>{if(n)return window;if(i){if("undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope)return globalThis;if(self instanceof WorkerGlobalScope)return self}throw new Error('New Relic browser agent shutting down due to error: Unable to locate global scope. This is possibly due to code redefining browser global variables like "self" and "window".')})();function a(){return o}},7022:(e,t,r)=>{"use strict";r.d(t,{D:()=>i});var n=Object.prototype.hasOwnProperty;function i(e,t){var r=[],i="",o=0;for(i in e)n.call(e,i)&&(r[o]=t(i,e[i]),o+=1);return r}},9226:(e,t,r)=>{"use strict";r.d(t,{$c:()=>u,Ng:()=>d,RR:()=>c});var n=r(6562),i=r(9557),o=r(9548),a=r(8610),s={regex:/^file:\/\/(.*)/,replacement:"file://OBFUSCATED"};class c extends i.w{constructor(e){super(e)}shouldObfuscate(){return u(this.sharedContext.agentIdentifier).length>0}obfuscateString(e){if(!e||"string"!=typeof e)return e;for(var t=u(this.sharedContext.agentIdentifier),r=e,n=0;n<t.length;n++){var i=t[n].regex,o=t[n].replacement||"*";r=r.replace(i,o)}return r}}function u(e){var t=[],r=(0,n.Mt)(e,"obfuscate")||[];return t=t.concat(r),o.T.isFileProtocol()&&t.push(s),t}function d(e){for(var t=!1,r=!1,n=0;n<e.length;n++){"regex"in e[n]?"string"!=typeof e[n].regex&&e[n].regex.constructor!==RegExp&&((0,a.Z)('An obfuscation replacement rule contains a "regex" value with an invalid type (must be a string or RegExp)'),r=!0):((0,a.Z)('An obfuscation replacement rule was detected missing a "regex" value.'),r=!0);var i=e[n].replacement;i&&"string"!=typeof i&&((0,a.Z)('An obfuscation replacement rule contains a "replacement" value with an invalid type (must be a string)'),t=!0)}return!t&&!r}},2650:(e,t,r)=>{"use strict";r.d(t,{K:()=>a,b:()=>o});var n=r(8544);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,n.bP)("load",e,t)}function a(e){if(i())return e();(0,n.iz)("DOMContentLoaded",e)}},6797:(e,t,r)=>{"use strict";r.d(t,{EZ:()=>u,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>d,mF:()=>s});var n=r(2053),i=r(2374);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,r){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,n.zO)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[r]:t}},i}function u(e,t){a()[e]=t}function d(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},6998:(e,t,r)=>{"use strict";r.d(t,{N:()=>i,e:()=>o});var n=r(8544);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1];return void(0,n.iz)("visibilitychange",(function(){if(t){if("hidden"!=document.visibilityState)return;e()}e(document.visibilityState)}))}function o(){return"hidden"===document.visibilityState?-1:1/0}},6034:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.metrics},600:(e,t,r)=>{"use strict";r.r(t),r.d(t,{Instrument:()=>O,constants:()=>T});var n=r(9252),i=r(4045),o=r(6114),a=r(2374),s={REACT:"React",ANGULAR:"Angular",ANGULARJS:"AngularJS",BACKBONE:"Backbone",EMBER:"Ember",VUE:"Vue",METEOR:"Meteor",ZEPTO:"Zepto",JQUERY:"Jquery"};function c(){if(!a.il)return[];var e=[];try{(function(){try{if(window.React||window.ReactDOM||window.ReactRedux)return!0;if(document.querySelector("[data-reactroot], [data-reactid]"))return!0;for(var e=document.querySelectorAll("body > div"),t=0;t<e.length;t++)if(Object.keys(e[t]).indexOf("_reactRootContainer")>=0)return!0;return!1}catch(e){return!1}})()&&e.push(s.REACT),function(){try{return!!window.angular||(!!document.querySelector(".ng-binding, [ng-app], [data-ng-app], [ng-controller], [data-ng-controller], [ng-repeat], [data-ng-repeat]")||!!document.querySelector('script[src*="angular.js"], script[src*="angular.min.js"]'))}catch(e){return!1}}()&&e.push(s.ANGULARJS),function(){try{return!!(window.hasOwnProperty("ng")&&window.ng.hasOwnProperty("coreTokens")&&window.ng.coreTokens.hasOwnProperty("NgZone"))||!!document.querySelectorAll("[ng-version]").length}catch(e){return!1}}()&&e.push(s.ANGULAR),window.Backbone&&e.push(s.BACKBONE),window.Ember&&e.push(s.EMBER),window.Vue&&e.push(s.VUE),window.Meteor&&e.push(s.METEOR),window.Zepto&&e.push(s.ZEPTO),window.jQuery&&e.push(s.JQUERY)}catch(e){}return e}var u=r(9548),d=r(9226),f=r(8226),l=r(2650),g=r(8544),p=r(6562),h=r(8610);const v={dedicated:Boolean(a._A?.Worker),shared:Boolean(a._A?.SharedWorker),service:Boolean(a._A?.navigator?.serviceWorker)};let m,b,y;var w=r(6034);var A,E,x;class O extends o.S{constructor(e,t){var r;let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,w.t,n),r=this,this.singleChecks(),this.eachSessionChecks(),(0,i.X)("record-supportability",(function(){return r.recordSupportability(...arguments)}),this.featureName,this.ee),(0,i.X)("record-custom",(function(){return r.recordCustom(...arguments)}),this.featureName,this.ee),this.importAggregator()}recordSupportability(e,t){var r=["sm",e,{name:e},t];return(0,n.p)("storeMetric",r,null,this.featureName,this.ee),r}recordCustom(e,t){var r=["cm",e,{name:e},t];return(0,n.p)("storeEventMetrics",r,null,this.featureName,this.ee),r}singleChecks(){this.recordSupportability("Generic/Version/".concat(f.q,"/Detected"));const{loaderType:e}=(0,p.OP)(this.agentIdentifier);e&&this.recordSupportability("Generic/LoaderType/".concat(e,"/Detected")),a.il&&(0,l.K)((()=>{c().forEach((e=>{this.recordSupportability("Framework/"+e+"/Detected")}))})),u.T.isFileProtocol()&&(this.recordSupportability("Generic/FileProtocol/Detected"),u.T.supportabilityMetricSent=!0);const t=(0,d.$c)(this.agentIdentifier);t.length>0&&this.recordSupportability("Generic/Obfuscate/Detected"),t.length>0&&!(0,d.Ng)(t)&&this.recordSupportability("Generic/Obfuscate/Invalid"),function(e){if(!m){if(v.dedicated){m=Worker;try{a._A.Worker=r(m,"Dedicated")}catch(e){o(e,"Dedicated")}if(v.shared){b=SharedWorker;try{a._A.SharedWorker=r(b,"Shared")}catch(e){o(e,"Shared")}}else n("Shared");if(v.service){y=navigator.serviceWorker.register;try{a._A.navigator.serviceWorker.register=(t=y,function(){for(var e=arguments.length,r=new Array(e),n=0;n<e;n++)r[n]=arguments[n];return i("Service",r[1]?.type),t.apply(navigator.serviceWorker,r)})}catch(e){o(e,"Service")}}else n("Service");var t;return}n("All")}function r(e,t){return"undefined"==typeof Proxy?e:new Proxy(e,{construct:(e,r)=>(i(t,r[1]?.type),new e(...r))})}function n(t){a.v6||e("Workers/".concat(t,"/Unavailable"))}function i(t,r){e("Workers/".concat(t,"module"===r?"/Module":"/Classic"))}function o(t,r){e("Workers/".concat(r,"/SM/Unsupported")),(0,h.Z)("NR Agent: Unable to capture ".concat(r," workers."),t)}}(this.recordSupportability.bind(this))}eachSessionChecks(){a.il&&(0,g.bP)("pageshow",(e=>{e.persisted&&this.recordSupportability("Generic/BFCache/PageRestored")}))}}A=O,E="featureName",x=w.t,(E=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(E))in A?Object.defineProperty(A,E,{value:x,enumerable:!0,configurable:!0,writable:!0}):A[E]=x;var T={SUPPORTABILITY_METRIC:"sm",CUSTOM_METRIC:"cm"}},2484:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewEvent},5637:(e,t,r)=>{"use strict";r.r(t),r.d(t,{Instrument:()=>h});var n,i,o,a=r(9252),s=r(2053),c=r(8283),u=r(6625),d=r(6114),f=r(2650),l=r(2484),g=r(2325),p=r(2374);class h extends d.S{constructor(e,t){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,l.t,r),p.il&&((0,u.v)(e),(0,c.B)(e,"firstbyte",(0,s.yf)()),(0,f.K)((()=>this.measureDomContentLoaded())),(0,f.b)((()=>this.measureWindowLoaded()),!0),this.importAggregator())}measureWindowLoaded(){var e=(0,s.zO)();(0,c.B)(this.agentIdentifier,"onload",e+(0,s.os)()),(0,a.p)("timing",["load",e],void 0,g.D.pageViewTiming,this.ee)}measureDomContentLoaded(){(0,c.B)(this.agentIdentifier,"domContent",(0,s.zO)()+(0,s.os)())}}n=h,i="featureName",o=l.t,(i=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(i))in n?Object.defineProperty(n,i,{value:o,enumerable:!0,configurable:!0,writable:!0}):n[i]=o},6382:(e,t,r)=>{"use strict";r.d(t,{t:()=>n});const n=r(2325).D.pageViewTiming},7817:(e,t,r)=>{"use strict";r.r(t),r.d(t,{Instrument:()=>h});var n,i,o,a=r(9252),s=r(6998),c=r(8544),u=r(2053),d=r(6562),f=r(6114),l=r(6382),g=r(2325),p=r(2374);class h extends f.S{constructor(e,t){var r;let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(e,t,l.t,n),r=this,p.il){if(this.pageHiddenTime=(0,s.e)(),this.performanceObserver,this.lcpPerformanceObserver,this.clsPerformanceObserver,this.fiRecorded=!1,"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){this.performanceObserver=new PerformanceObserver((function(){return r.perfObserver(...arguments)}));try{this.performanceObserver.observe({entryTypes:["paint"]})}catch(e){}this.lcpPerformanceObserver=new PerformanceObserver((function(){return r.lcpObserver(...arguments)}));try{this.lcpPerformanceObserver.observe({entryTypes:["largest-contentful-paint"]})}catch(e){}this.clsPerformanceObserver=new PerformanceObserver((function(){return r.clsObserver(...arguments)}));try{this.clsPerformanceObserver.observe({type:"layout-shift",buffered:!0})}catch(e){}}this.fiRecorded=!1;["click","keydown","mousedown","pointerdown","touchstart"].forEach((e=>{(0,c.iz)(e,(function(){return r.captureInteraction(...arguments)}))})),(0,s.N)((()=>{this.pageHiddenTime=(0,u.zO)(),(0,a.p)("docHidden",[this.pageHiddenTime],void 0,g.D.pageViewTiming,this.ee)}),!0),(0,c.bP)("pagehide",(()=>(0,a.p)("winPagehide",[(0,u.zO)()],void 0,g.D.pageViewTiming,this.ee))),this.importAggregator()}}perfObserver(e,t){e.getEntries().forEach((e=>{"first-paint"===e.name?(0,a.p)("timing",["fp",Math.floor(e.startTime)],void 0,g.D.pageViewTiming,this.ee):"first-contentful-paint"===e.name&&(0,a.p)("timing",["fcp",Math.floor(e.startTime)],void 0,g.D.pageViewTiming,this.ee)}))}lcpObserver(e,t){var r=e.getEntries();if(r.length>0){var n=r[r.length-1];if(this.pageHiddenTime<n.startTime)return;var i=[n],o=this.addConnectionAttributes({});o&&i.push(o),(0,a.p)("lcp",i,void 0,g.D.pageViewTiming,this.ee)}}clsObserver(e){e.getEntries().forEach((e=>{e.hadRecentInput||(0,a.p)("cls",[e],void 0,g.D.pageViewTiming,this.ee)}))}addConnectionAttributes(e){var t=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(t)return t.type&&(e["net-type"]=t.type),t.effectiveType&&(e["net-etype"]=t.effectiveType),t.rtt&&(e["net-rtt"]=t.rtt),t.downlink&&(e["net-dlink"]=t.downlink),e}captureInteraction(e){if(e instanceof d.Yu.EV&&!this.fiRecorded){var t=Math.round(e.timeStamp),r={type:e.type};this.addConnectionAttributes(r),t<=(0,u.zO)()?r.fid=(0,u.zO)()-t:t>(0,u.os)()&&t<=Date.now()?(t-=(0,u.os)(),r.fid=(0,u.zO)()-t):t=(0,u.zO)(),this.fiRecorded=!0,(0,a.p)("timing",["fi",t,r],void 0,g.D.pageViewTiming,this.ee)}}}n=h,i="featureName",o=l.t,(i=function(e){var t=function(e,t){if("object"!=typeof e||null===e)return e;var r=e[Symbol.toPrimitive];if(void 0!==r){var n=r.call(e,t||"default");if("object"!=typeof n)return n;throw new TypeError("@@toPrimitive must return a primitive value.")}return("string"===t?String:Number)(e)}(e,"string");return"symbol"==typeof t?t:String(t)}(i))in n?Object.defineProperty(n,i,{value:o,enumerable:!0,configurable:!0,writable:!0}):n[i]=o},1509:(e,t,r)=>{"use strict";r.d(t,{W:()=>s});var n=r(6562),i=r(3752),o=r(2384),a=r(6797);class s{constructor(e,t,r){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,n.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=r,this.blocked=!1,this.checkConfiguration()}checkConfiguration(){if(!(0,n.lF)(this.agentIdentifier)){let e={...(0,a.gG)().info?.jsAttributes};try{e={...e,...(0,n.C5)(this.agentIdentifier)?.jsAttributes}}catch(e){}(0,o.j)(this.agentIdentifier,{...(0,a.gG)(),info:{...(0,a.gG)().info,jsAttributes:e}})}}}},6114:(e,t,r)=>{"use strict";r.d(t,{S:()=>c});var n=r(4329),i=r(1509),o=r(2650),a=r(2374),s=r(8610);class c extends i.W{constructor(e,t,r){let i=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,r),this.hasAggregator=!1,this.auto=i,this.abortHandler,i&&(0,n.R)(e,r)}importAggregator(){if(this.hasAggregator||!this.auto)return;this.hasAggregator=!0;const e=async()=>{try{const{lazyLoader:e}=await r.e(729).then(r.bind(r,8110)),{Aggregate:t}=await e(this.featureName,"aggregate");new t(this.agentIdentifier,this.aggregator)}catch(e){(0,s.Z)("Downloading ".concat(this.featureName," failed...")),this.abortHandler?.()}};a.v6?e():(0,o.b)((()=>e()),!0)}}},2384:(e,t,r)=>{"use strict";r.d(t,{j:()=>y});var n=r(8683),i=r.n(n),o=r(2325),a=r(6562),s=r(9252),c=r(7022),u=r(3752),d=r(2053),f=r(4329),l=r(2650),g=r(2374),p=r(8610);function h(e){["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError"].forEach((t=>{e[t]=function(){for(var r=arguments.length,n=new Array(r),i=0;i<r;i++)n[i]=arguments[i];return function(t){for(var r=arguments.length,n=new Array(r>1?r-1:0),i=1;i<r;i++)n[i-1]=arguments[i];Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&e.api[t](...n)}))}(t,...n)}}))}var v=r(6797);const m={stn:[o.D.sessionTrace],err:[o.D.jserrors,o.D.metrics],ins:[o.D.pageAction],spa:[o.D.spa]};const b={};function y(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},n=arguments.length>2?arguments[2]:void 0,y=arguments.length>3?arguments[3]:void 0,{init:w,info:A,loader_config:E,runtime:x={loaderType:n},exposed:O=!0}=t;const T=(0,v.gG)();let S={};return A||(w=T.init,A=T.info,E=T.loader_config,S=T),g.v6&&(A.jsAttributes={...A.jsAttributes,isWorker:!0}),(0,a.CX)(e,A),(0,a.Dg)(e,w||{}),(0,a.GE)(e,E||{}),(0,a.sU)(e,x),function(e,t,n){n||(0,f.R)(e,"api"),h(t);var v=u.ee.get(e),m=v.get("tracer"),b="api-",y=b+"ixn-";function w(){}(0,c.D)(["setErrorHandler","finished","addToTrace","inlineHit","addRelease"],(function(e,r){t[r]=E(b,r,!0,"api")})),t.addPageAction=E(b,"addPageAction",!0,o.D.pageAction),t.setCurrentRouteName=E(b,"routeName",!0,o.D.spa),t.setPageViewName=function(t,r){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,a.OP)(e).customTransaction=(r||"http://custom.transaction")+t,E(b,"setPageViewName",!0,"api")()},t.setCustomAttribute=function(t,r){const n=(0,a.C5)(e);return(0,a.CX)(e,{...n,jsAttributes:{...n.jsAttributes,[t]:r}}),E(b,"setCustomAttribute",!0,"api")()},t.interaction=function(){return(new w).get()};var A=w.prototype={createTracer:function(e,t){var r={},n=this,i="function"==typeof t;return(0,s.p)(y+"tracer",[(0,d.zO)(),e,r],n,o.D.spa,v),function(){if(m.emit((i?"":"no-")+"fn-start",[(0,d.zO)(),n,i],r),i)try{return t.apply(this,arguments)}catch(e){throw m.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],r),e}finally{m.emit("fn-end",[(0,d.zO)()],r)}}}};function E(e,t,r,n){return function(){return(0,s.p)("record-supportability",["API/"+t+"/called"],void 0,o.D.metrics,v),(0,s.p)(e+t,[(0,d.zO)()].concat(i()(arguments)),r?null:this,n,v),r?void 0:this}}function x(){r.e(439).then(r.bind(r,5692)).then((t=>{let{setAPI:r}=t;r(e),(0,f.L)(e,"api")})).catch((()=>(0,p.Z)("Downloading runtime APIs failed...")))}(0,c.D)("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),(function(e,t){A[t]=E(y,t,void 0,o.D.spa)})),t.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,s.p)("record-supportability",["API/noticeError/called"],void 0,o.D.metrics,v),(0,s.p)("err",[e,(0,d.zO)(),!1,t],void 0,o.D.jserrors,v)},g.v6?x():(0,l.b)((()=>x()),!0)}(e,S,y),(0,v.Qy)(e,T,"api"),(0,v.Qy)(e,O,"exposed"),g.v6||((0,v.EZ)("activatedFeatures",b),(0,v.EZ)("setToken",(t=>function(e,t){var r=u.ee.get(t);e&&"object"==typeof e&&((0,c.D)(e,(function(e,t){if(!t)return(m[e]||[]).forEach((t=>{(0,s.p)("block-"+e,[],void 0,t,r)}));b[e]||((0,s.p)("feat-"+e,[],void 0,m[e],r),b[e]=!0)})),(0,f.L)(t,o.D.pageViewEvent))}(t,e)))),S}},909:(e,t,r)=>{"use strict";r.d(t,{Z:()=>i,q:()=>o});var n=r(2325);function i(e){switch(e){case n.D.ajax:return[n.D.jserrors];case n.D.sessionTrace:return[n.D.ajax,n.D.pageViewEvent];case n.D.pageViewTiming:return[n.D.pageViewEvent];default:return[]}}function o(e){return e===n.D.jserrors?[]:["auto"]}},2325:(e,t,r)=>{"use strict";r.d(t,{D:()=>n,p:()=>i});const n={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionTrace:"session_trace",spa:"spa"},i={[n.pageViewEvent]:1,[n.pageViewTiming]:2,[n.metrics]:3,[n.jserrors]:4,[n.ajax]:5,[n.sessionTrace]:6,[n.pageAction]:7,[n.spa]:8}},8683:e=>{e.exports=function(e,t,r){t||(t=0),void 0===r&&(r=e?e.length:0);for(var n=-1,i=r-t||0,o=Array(i<0?0:i);++n<i;)o[n]=e[t+n];return o}}},n={};function i(e){var t=n[e];if(void 0!==t)return t.exports;var o=n[e]={exports:{}};return r[e](o,o.exports,i),o.exports}i.m=r,i.n=e=>{var t=e&&e.__esModule?()=>e.default:()=>e;return i.d(t,{a:t}),t},i.d=(e,t)=>{for(var r in t)i.o(t,r)&&!i.o(e,r)&&Object.defineProperty(e,r,{enumerable:!0,get:t[r]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,r)=>(i.f[r](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",193:"session_trace-aggregate",225:"ajax-instrument",317:"jserrors-aggregate",348:"page_view_timing-aggregate",439:"async-api",578:"jserrors-instrument",729:"lazy-loader",757:"session_trace-instrument",786:"page_view_event-aggregate",873:"spa-aggregate",876:"spa-instrument",898:"ajax-aggregate",908:"page_action-instrument"}[e]||e)+"."+{78:"92657d87",118:"34a59fa6",147:"7dcaee1b",193:"401d5d17",225:"25fe7245",264:"bcaf68fc",317:"d078b949",348:"6b3fec7f",439:"6bb277af",578:"c8f23c89",729:"48127245",757:"98d3280d",786:"29613e65",873:"58d1fc78",876:"364406a9",898:"178bdaa3",908:"64360627"}[e]+"-1226.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(r,n,o,a)=>{if(e[r])e[r].push(n);else{var s,c;if(void 0!==o)for(var u=document.getElementsByTagName("script"),d=0;d<u.length;d++){var f=u[d];if(f.getAttribute("src")==r||f.getAttribute("data-webpack")==t+o){s=f;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=r),e[r]=[n];var l=(t,n)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[r];if(delete e[r],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(n))),t)return t(n)},g=setTimeout(l.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=l.bind(null,s.onerror),s.onload=l.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.p="https://js-agent.newrelic.com/",(()=>{var e={831:0,744:0};i.f.j=(t,r)=>{var n=i.o(e,t)?e[t]:void 0;if(0!==n)if(n)r.push(n[2]);else{var o=new Promise(((r,i)=>n=e[t]=[r,i]));r.push(n[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(r=>{if(i.o(e,t)&&(0!==(n=e[t])&&(e[t]=void 0),n)){var o=r&&("load"===r.type?"missing":r.type),a=r&&r.target&&r.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,n[1](s)}}),"chunk-"+t,t)}};var t=(t,r)=>{var n,o,[a,s,c]=r,u=0;if(a.some((t=>0!==e[t]))){for(n in s)i.o(s,n)&&(i.m[n]=s[n]);if(c)c(i)}for(t&&t(r);u<a.length;u++)o=a[u],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},r=window.webpackChunkNRBA=window.webpackChunkNRBA||[];r.forEach(t.bind(null,0)),r.push=t.bind(null,r.push.bind(r))})();var o={};(()=>{"use strict";i.r(o);var e=i(2325),t=i(6562);const r=Object.values(e.D);function n(e){const n={};return r.forEach((r=>{n[r]=function(e,r){return!1!==(0,t.Mt)(r,"".concat(e,".enabled"))}(r,e)})),n}var a=i(2384),s=i(909),c=i(9557),u=i(7022);class d extends c.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,r,n,i){var o=this.getBucket(e,t,r,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,u.D)(e,(function(e,r){t[e]=f(r,t[e])})),t}(n,o.metrics),o}merge(e,t,r,n,i){var o=this.getBucket(e,t,n,i);if(o.metrics){var a=o.metrics;a.count+=r.count,(0,u.D)(r,(function(e,t){if("count"!==e){var n=a[e],i=r[e];i&&!i.c?a[e]=f(i.t,n):a[e]=function(e,t){if(!t)return e;t.c||(t=l(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=r}storeMetric(e,t,r,n){var i=this.getBucket(e,t,r);return i.stats=f(n,i.stats),i}getBucket(e,t,r,n){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:r||{}},n&&(i.custom=n)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},r="",n=!1,i=0;i<e.length;i++)t[r=e[i]]=g(this.aggregatedData[r]),t[r].length&&(n=!0),delete this.aggregatedData[r];return n?t:null}}function f(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=l(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function l(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function g(e){return"object"!=typeof e?[]:(0,u.D)(e,p)}function p(e,t){return t}var h=i(6797),v=i(5526),m=i(8610);var b=i(5637),y=i(7817),w=i(600);new class{constructor(t){let r=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,v.ky)(16);this.agentIdentifier=r,this.sharedAggregator=new d({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=t.features||[],this.desiredFeatures.sort(((t,r)=>e.p[t.featureName]-e.p[r.featureName])),Object.assign(this,(0,a.j)(this.agentIdentifier,t,t.loaderType||"agent")),this.start()}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const e="features";try{const t=n(this.agentIdentifier);this.desiredFeatures.forEach((e=>{if(t[e.featureName]){const r=(0,s.Z)(e.featureName);r.every((e=>t[e]))||(0,m.Z)("".concat(e.featureName," is enabled but one or more dependent features has been disabled (").concat(JSON.stringify(r),"). This may cause unintended consequences or missing data...")),this.features[e.featureName]=new e(this.agentIdentifier,this.sharedAggregator)}})),(0,h.Qy)(this.agentIdentifier,this.features,e)}catch(t){(0,m.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",t);for(const e in this.features)this.features[e].abortHandler?.();const r=(0,h.fP)();return delete r.initializedAgents[this.agentIdentifier]?.api,delete r.initializedAgents[this.agentIdentifier]?.[e],delete this.sharedAggregator,delete r.ee?.get(this.agentIdentifier),!1}}}({features:[b.Instrument,y.Instrument,w.Instrument],loaderType:"lite"})})(),window.NRBA=o})();</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/images/favicons/favicon-16x16.png">
+    <link rel="mask-icon" href="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
+    <script id="typekit">
+        (function(d) {
+            var config = {
+                    kitId: 'ysb6omh',
+                    scriptTimeout: 3000,
+                    async: true
+                },
+                h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+    </script>
+
+    <script async id="" src="https://cdn.registerdisney.go.com/v4/OneID.js"></script><meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/ar/" hreflang="ar">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/id/" hreflang="id">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/ms/" hreflang="ms">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/pt-br/" hreflang="pt-BR">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/bg/" hreflang="bg">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/fr-ca/" hreflang="fr-CA">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/zh/" hreflang="zh-CN">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/cs/" hreflang="cs">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/zh-hk/" hreflang="zh-HK">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/zh-tw/" hreflang="zh-TW">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/da/" hreflang="da">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/nl/" hreflang="nl">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/en/" hreflang="en">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/fi/" hreflang="fi">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/fr/" hreflang="fr-FR">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/de/" hreflang="de">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/el/" hreflang="el">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/he/" hreflang="he">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/hi/" hreflang="hi">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/hu/" hreflang="hu">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/it/" hreflang="it">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/ja/" hreflang="ja">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/ko/" hreflang="ko">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/nn/" hreflang="nn">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/pl/" hreflang="pl">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/pt/" hreflang="pt-PT">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/ro/" hreflang="ro">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/ru/" hreflang="ru">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/sr/" hreflang="sr">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/es-es/" hreflang="es-ES">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/es/" hreflang="es-MX">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/sv/" hreflang="sv">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/tl/" hreflang="tl">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/th/" hreflang="th">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/tr/" hreflang="tr">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/vi/" hreflang="vi">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/hr/" hreflang="hr">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/et/" hreflang="et">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/lv/" hreflang="lv">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/lt/" hreflang="lt">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/sk/" hreflang="sk">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/sl/" hreflang="sl">
+<link rel="alternate" href="https://privacy.thewaltdisneycompany.com/" hreflang="x-default">
+
+	<!-- This site is optimized with the Yoast SEO plugin v19.8 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Disney Privacy Center Home - The Walt Disney Privacy Center</title>
+	<link rel="canonical" href="https://privacy.thewaltdisneycompany.com/en/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:locale:alternate" content="ar_AR">
+	<meta property="og:locale:alternate" content="id_ID">
+	<meta property="og:locale:alternate" content="ms_MY">
+	<meta property="og:locale:alternate" content="pt_BR">
+	<meta property="og:locale:alternate" content="bg_BG">
+	<meta property="og:locale:alternate" content="fr_CA">
+	<meta property="og:locale:alternate" content="zh_CN">
+	<meta property="og:locale:alternate" content="cs_CZ">
+	<meta property="og:locale:alternate" content="zh_HK">
+	<meta property="og:locale:alternate" content="zh_TW">
+	<meta property="og:locale:alternate" content="da_DK">
+	<meta property="og:locale:alternate" content="nl_NL">
+	<meta property="og:locale:alternate" content="fi_FI">
+	<meta property="og:locale:alternate" content="fr_FR">
+	<meta property="og:locale:alternate" content="de_DE">
+	<meta property="og:locale:alternate" content="el_GR">
+	<meta property="og:locale:alternate" content="he_IL">
+	<meta property="og:locale:alternate" content="hi_IN">
+	<meta property="og:locale:alternate" content="hu_HU">
+	<meta property="og:locale:alternate" content="it_IT">
+	<meta property="og:locale:alternate" content="ja_JP">
+	<meta property="og:locale:alternate" content="ko_KR">
+	<meta property="og:locale:alternate" content="nn_NO">
+	<meta property="og:locale:alternate" content="pl_PL">
+	<meta property="og:locale:alternate" content="pt_PT">
+	<meta property="og:locale:alternate" content="ro_RO">
+	<meta property="og:locale:alternate" content="ru_RU">
+	<meta property="og:locale:alternate" content="sr_RS">
+	<meta property="og:locale:alternate" content="es_ES">
+	<meta property="og:locale:alternate" content="es_MX">
+	<meta property="og:locale:alternate" content="sv_SE">
+	<meta property="og:locale:alternate" content="tl_PH">
+	<meta property="og:locale:alternate" content="th_TH">
+	<meta property="og:locale:alternate" content="tr_TR">
+	<meta property="og:locale:alternate" content="vi_VN">
+	<meta property="og:locale:alternate" content="hr_HR">
+	<meta property="og:locale:alternate" content="et_EE">
+	<meta property="og:locale:alternate" content="lv_LV">
+	<meta property="og:locale:alternate" content="lt_LT">
+	<meta property="og:locale:alternate" content="sk_SK">
+	<meta property="og:locale:alternate" content="sl_SI">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Disney Privacy Center Home - The Walt Disney Privacy Center">
+	<meta property="og:url" content="https://privacy.thewaltdisneycompany.com/en/">
+	<meta property="og:site_name" content="The Walt Disney Privacy Center">
+	<meta property="article:modified_time" content="2020-03-24T22:36:33+00:00">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://privacy.thewaltdisneycompany.com/en/","url":"https://privacy.thewaltdisneycompany.com/en/","name":"Disney Privacy Center Home - The Walt Disney Privacy Center","isPartOf":{"@id":"https://privacy.thewaltdisneycompany.com/en/#website"},"datePublished":"2016-09-20T19:27:33+00:00","dateModified":"2020-03-24T22:36:33+00:00","breadcrumb":{"@id":"https://privacy.thewaltdisneycompany.com/en/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://privacy.thewaltdisneycompany.com/en/"]}]},{"@type":"BreadcrumbList","@id":"https://privacy.thewaltdisneycompany.com/en/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://privacy.thewaltdisneycompany.com/en/#website","url":"https://privacy.thewaltdisneycompany.com/en/","name":"The Walt Disney Privacy Center","description":"","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://privacy.thewaltdisneycompany.com/en/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<meta name="google-site-verification" content="m9aDgXNtWMlT52SvFQV4LVhHrKvcZtBC1H_v2Izr7SQ">
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//s.w.org">
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.1.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/privacy.thewaltdisneycompany.com\/wp\/wp-includes\/js\/wp-emoji-release.min.js"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([10084,65039,8205,55357,56613],[10084,65039,8203,55357,56613])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel="stylesheet" id="wp-block-library-css" href="https://privacy.thewaltdisneycompany.com/wp/wp-includes/css/dist/block-library/style.min.css" type="text/css" media="all">
+<style id="global-styles-inline-css" type="text/css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+</style>
+<link rel="stylesheet" id="wpa-style-css" href="https://privacy.thewaltdisneycompany.com/app/plugins/wp-accessibility/css/wpa-style.css" type="text/css" media="all">
+<style id="wpa-style-inline-css" type="text/css">
+:root { --admin-bar-top : 7px; }
+</style>
+<link rel="stylesheet" id="app-css" href="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/css/app.6fe736b3.css" type="text/css" media="all">
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/plugins/svg-support/vendor/DOMPurify/DOMPurify.min.js" id="bodhi-dompurify-library-js"></script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/wp/wp-includes/js/jquery/jquery.min.js" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/wp/wp-includes/js/jquery/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<script type="text/javascript" id="DisneyOneID-js-extra">
+/* <![CDATA[ */
+var didOptions = {"didInstanceConfig":{"clientId":"DTSS-PRIVACYCENTER.WEB","responderPage":"https:\/\/privacy.thewaltdisneycompany.com\/wp\/oneid-responder-page\/","langPref":"en-US","cssOverride":"https:\/\/cdn.sites.disney.com\/sites\/privacy\/css\/permission-center-web-oneid-20221107.css","debug":"1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/plugins/dtss-ddm-oneid/assets/js/oneid-init.js" id="DisneyOneID-js"></script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/plugins/dtss-ddm-oneid/assets/js/oneid-user-interaction.js" id="DisneyOneIDBehaviors-js"></script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/plugins/svg-support/js/min/svgs-inline-min.js" id="bodhi_svg_inline-js"></script>
+<script type="text/javascript" id="bodhi_svg_inline-js-after">
+cssTarget="img.style-svg";ForceInlineSVGActive="false";frontSanitizationEnabled="on";
+</script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/js/vendor-9bebfb6e.js" id="vendor-js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://privacy.thewaltdisneycompany.com/wp/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://privacy.thewaltdisneycompany.com/wp/wp-includes/wlwmanifest.xml"> 
+
+<link rel="shortlink" href="https://privacy.thewaltdisneycompany.com/">
+		<style type="text/css" id="wp-custom-css">
+			#language-selector-modal.modal .modal-dialog .modal-content .modal-body #selection-footer #selection-image[class*="macedonia"] {
+    background-image: url(https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/images/language-selector/disney_priv_country_emea_8.svg);
+}		</style>
+		
+    <noscript>
+        <style>
+            .fade-content-in {
+                opacity: 1 !important;
+            }
+
+            .collapse {
+                display: block !important;
+            }
+
+            .openall, .closeall {
+                display: none !important;
+            }
+
+            .accordion-toggle {
+                display: none !important;
+            }
+
+            #logo-quilt {
+                display: none !important;
+            }
+
+            .tooltip-link {
+                text-decoration: none;
+            }
+        </style>
+    </noscript>
+</head>
+<body class="home page-template page-template-template-home page-template-template-home-php page page-id-2090">
+<!--[if lt IE 10]>
+<style>
+    /*for IE browsers older than V 10*/
+    .navbar-fixed-bottom, .navbar-fixed-top {
+        position: relative !important;
+    }
+
+    @media (min-width: 768px) {
+        .navbar-fixed-bottom, .navbar-fixed-top {
+            position: relative !important;
+        }
+    }
+
+    .fade-in {
+        opacity: 1;
+    }
+</style>
+<div class="alert alert-warning">
+    You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</div>
+<![endif]-->
+<div class="sr-only" role="navigation" aria-label="Skip links">
+    <a href="#main-content">Skip to content</a>
+    <a href="#menu-menu-1">Skip to navigation</a></div>
+<div id="language-selector-modal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close hidden-xs hidden-sm" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span></button>
+				<button type="button" class="close hidden-md hidden-lg cancel" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">cancel</span></button>
+
+				<h1 class="modal-title" id="myModalLabel">Country/Region &amp; Language Selector</h1>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div id="select-country-controller" class="modal-col left country">
+						<label class="sr-only" for="country-selector-drop">Search Countries</label>
+						<select name="%s" id="country-selector-drop-js"></select>
+					</div>
+					<div id="select-language-controller" class="modal-col right language">
+						<label class="sr-only" for="language-selector-drop">Search Languages</label>
+						<select name="%s" id="language-selector-drop-js"></select>
+					</div>
+					<div id="selection-footer">
+						<div id="selection-image" class="globe country-image"></div>
+						<button id="save-clang-pref" class="btn-gradient-horizontal savejs">Save							<span class="check"></span></button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- /.modal-content -->
+	</div>
+	<!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<header class="banner navbar navbar-default navbar-fixed-top navbar-opaque">
+        <div class="container-fluid">
+        <div id="util-nav"><a class="navbar-brand" href="https://privacy.thewaltdisneycompany.com/en/" title="The Walt Disney Privacy Center"><img src="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/images/logos/disney-logo.svg" alt="The Walt Disney Privacy Center" title="The Walt Disney Privacy Center"></a>
+            <div id="language-selector">
+                <a href="" data-toggle="modal" data-target="#language-selector-modal">
+                    <span class="icon-world"></span>
+                    <span class="country country-mobile">us</span>
+                    <span class="country country-full">United States</span>
+                    <span class="language">English</span>
+                </a>
+            </div>
+        </div>
+                                <div id="logo-quilt" role="presentation">
+                <div class="row">
+                                                                        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in one" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Disney-03.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Disney.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in two" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/09/hulu-brand-quilt-20220920.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/09/Hulu_onolymurders.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in three" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Lucasfilm.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Lucasfilm.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in four" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Marvel-08.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Marvel.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in five" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/National-Geographic.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Nat-Geo.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in six" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/SVG-Logos_ABC-02.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/abc.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in seven" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/ESPN-04.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/Espn.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 logo-quilt-box fade-in eight" role="presentation">
+                                <div class="logo-wrap" role="presentation">
+                                                                          <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/04/FX_BrandQuilt_Logo_350x185-_04.12.22.svg" alt="">
+                                                                    </div>
+                                <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/03/FX.jpg" alt="" class="bkg" role="presentation">
+                            </div>
+                                    </div>
+
+            </div>
+                <div id="gradient-border" class="gradient-horizontal"></div>
+    </div>
+    <div id="nav-wrapper">
+        <div class="container-fluid search-desktop">
+            <div id="search"><form role="search" method="get" id="search-form" action="https://privacy.thewaltdisneycompany.com/en/">
+    <div class="search-wrap">
+        <label class="screen-reader-text" for="search-submit">Search for</label>
+        <input type="hidden" value="1" name="sentence">
+        <input type="search" placeholder="Search" maxlength="64" name="s" id="search-input" value="">
+        <input class="" type="submit" id="search-submit" value="">
+        <div class="clear-search"></div>
+    </div>
+</form>
+</div>
+        </div>
+
+        <div class="container nav-wrap">
+            <div class="navbar-header">
+                <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".navbar-collapse" type="button" class="navbar-toggle open-btn pull-left">
+                    <span class="sr-only">
+                        Toggle navigation                    </span>
+                    <span class="icon-bar gradient-horizontal"></span>
+                    <span class="icon-bar gradient-horizontal"></span>
+                    <span class="icon-bar gradient-horizontal"></span>
+                </button>
+                <button data-toggle="collapse-side" data-target=".side-collapse" data-target-2=".navbar-collapse" type="button" class="navbar-toggle close-btn pull-right">
+                    <span class="sr-only">
+                        Toggle navigation                    </span>
+                    <span class="icon-bar bar-top gradient-horizontal"></span>
+                    <span class="icon-bar bar-bottom gradient-horizontal"></span>
+                </button>
+                <button data-toggle="dropdown" type="button" class="navbar-toggle back-btn pull-left">
+                    <span class="sr-only">
+                        Toggle navigation                    </span>
+                    <span class="icon-bar bar-top gradient-horizontal"></span>
+                    <span class="icon-bar bar-bottom gradient-horizontal"></span>
+                </button>
+            </div>
+            <div class="side-collapse in">
+                <div class="side-collapse-inner">
+                    <nav id="navbar" class="collapse navbar-collapse">
+
+                        <div id="search" class="search-mobile"><form role="search" method="get" id="search-form" action="https://privacy.thewaltdisneycompany.com/en/">
+    <div class="search-wrap">
+        <label class="screen-reader-text" for="search-submit">Search for</label>
+        <input type="hidden" value="1" name="sentence">
+        <input type="search" placeholder="Search" maxlength="64" name="s" id="search-input" value="">
+        <input class="" type="submit" id="search-submit" value="">
+        <div class="clear-search"></div>
+    </div>
+</form>
+</div>
+                        <div id="nav-items">
+                            <div class="menu-main-menu-english-container"><ul id="menu-main-menu-english" class="nav navbar-nav mobile-nav"><li id="menu-item-12228" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-12228 depth-0 privacy-policy has-children dropdown"><a title="Privacy Policy" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/">Privacy Policy <span class="menu-btn"><span class="icon-bar bar-top gradient-horizontal"></span> <span class="icon-bar bar-bottom gradient-horizontal"></span></span></a>
+<ul role="menu" class="dropdown-menu">
+<li id="menu-item-12222" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-12222 depth-1 privacy-policy no-children"><a title="Privacy Policy" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-2129" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2129 depth-1 your-california-privacy-rights no-children"><a title="Your California Privacy Rights" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-california-privacy-rights/">Your California Privacy Rights</a></li>
+<li id="menu-item-30252" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-30252 depth-1 your-us-state-privacy-rights no-children"><a title="Your US State Privacy Rights" href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-us-state-privacy-rights/">Your US State Privacy Rights</a></li>
+</ul>
+</li><li id="menu-item-2842" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2842 depth-0 for-parents has-children dropdown"><a title="For Parents" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="https://privacy.thewaltdisneycompany.com/en/for-parents/">For Parents <span class="menu-btn"><span class="icon-bar bar-top gradient-horizontal"></span> <span class="icon-bar bar-bottom gradient-horizontal"></span></span></a>
+<ul role="menu" class="dropdown-menu">
+<li id="menu-item-2848" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2848 depth-1 for-parents no-children"><a title="For Parents" href="https://privacy.thewaltdisneycompany.com/en/for-parents/">For Parents</a></li>
+<li id="menu-item-2845" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2845 depth-1 childrens-privacy-policy no-children"><a title="Children&rsquo;s Privacy Policy" href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/">Children&rsquo;s Privacy Policy</a></li>
+<li id="menu-item-30379" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-30379 depth-1 advertising-on-disney no-children"><a title="Advertising on Disney+" href="https://privacy.thewaltdisneycompany.com/en/for-parents/advertising-on-disneyplus/">Advertising on Disney+</a></li>
+<li id="menu-item-2823" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2823 depth-1 internet-safety no-children"><a title="Internet Safety" href="https://privacy.thewaltdisneycompany.com/en/internet-safety/">Internet Safety</a></li>
+</ul>
+</li>
+
+<ul role="menu" class="dropdown-menu">
+</ul>
+<li id="menu-item-2138" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2138 depth-0 privacy-controls has-children dropdown"><a title="Privacy Controls" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="https://privacy.thewaltdisneycompany.com/en/privacy-controls/">Privacy Controls <span class="menu-btn"><span class="icon-bar bar-top gradient-horizontal"></span> <span class="icon-bar bar-bottom gradient-horizontal"></span></span></a>
+<ul role="menu" class="dropdown-menu">
+<li id="menu-item-12558" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-12558 depth-1 privacy-controls no-children"><a title="Privacy Controls" href="https://privacy.thewaltdisneycompany.com/en/privacy-controls/">Privacy Controls</a></li>
+<li id="menu-item-2144" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2144 depth-1 online-tracking-technologies-and-advertising no-children"><a title="ONLINE TRACKING TECHNOLOGIES AND ADVERTISING" href="https://privacy.thewaltdisneycompany.com/en/privacy-controls/online-tracking-and-advertising/">ONLINE TRACKING TECHNOLOGIES AND ADVERTISING</a></li>
+<li id="menu-item-2147" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-2147 depth-1 komunikacijski-izbori no-children"><a title="Communication Choices" href="https://privacy.thewaltdisneycompany.com/en/privacy-controls/communication-choices/">Communication Choices</a></li>
+</ul>
+</li>
+<li id="menu-item-29084" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-29084 depth-0 more-resources has-children dropdown"><a title="More Resources" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="https://privacy.thewaltdisneycompany.com/en/more-resources/">More Resources <span class="menu-btn"><span class="icon-bar bar-top gradient-horizontal"></span> <span class="icon-bar bar-bottom gradient-horizontal"></span></span></a>
+<ul role="menu" class="dropdown-menu">
+<li id="menu-item-29085" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-29085 depth-1 more-resources no-children"><a title="More Resources" href="https://privacy.thewaltdisneycompany.com/en/more-resources/">More Resources</a></li>
+</ul>
+</li>
+<li id="menu-item-2141" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-2141 depth-0 support has-children dropdown"><a title="Contact Us" data-toggle="dropdown" class="dropdown-toggle" aria-haspopup="true" href="https://privacy.thewaltdisneycompany.com/en/support/">Contact Us <span class="menu-btn"><span class="icon-bar bar-top gradient-horizontal"></span> <span class="icon-bar bar-bottom gradient-horizontal"></span></span></a>
+<ul role="menu" class="dropdown-menu">
+<li id="menu-item-12561" class=" menu-item menu-item-type-post_type menu-item-object-page menu-item-12561 depth-1 contact-us no-children"><a title="Contact Us" href="https://privacy.thewaltdisneycompany.com/en/support/">Contact Us</a></li>
+</ul>
+</li>
+</ul></div>                            <div class="menu-brand-quilt visible-xs-block">
+                                <img src="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/images/logos/drop-down-logos.png" alt="Disney Brands">
+                            </div>
+                            <div id="search-icon"><span class="sr-only">Search</span></div>
+
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="wrap container-fluid" role="document">
+    <div class="content row">
+        <main class="main" id="main-content">
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <header class="animated bounceInUp">
+
+                                    <object type="image/svg+xml" data="https://privacy.thewaltdisneycompany.com/app/uploads/2019/05/Privacy-Policy.svg" title="Privacy Policy" class="illustration"></object>
+                                    <h1>Privacy Policy</h1>
+                                </header>
+
+                                <div class="article animated bounceInUp">
+                                    <p>The Walt Disney Company has a rich tradition of bringing great stories, characters, and experiences to our guests around the world, and our sites and applications are created&nbsp;to entertain and connect guests with the best that we have to offer on the platforms and devices our guests prefer.&nbsp; When our guests use our sites and applications, we may obtain data from and about guests and their devices. We are dedicated to treating your personal information with care and respect. Our privacy policy is designed to provide transparency into our privacy practices and principles in a format that our guests can navigate, read and understand.&nbsp; Our policy explains:</p>
+<ul>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy">The scope of this policy</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading1">Who we are, including which member of The Walt Disney Family of Companies is responsible for your personal information collected from our sites and applications</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading2">The types of information we collect</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading3">How we collect your information</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading4">How we use your information, including sharing it with other members of The Walt Disney Family of Companies</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading5">The limited circumstances under which we share your personal information with other entities</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading6">Your controls and choices</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading7">Our children&rsquo;s privacy policy and practices</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading8">Our data security, integrity, and retention policies and practices</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading9">Our global data transfer, storage, and processing practices</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading10">How we manage updates to this policy</a></li>
+<li style="text-align: left"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading11">How to contact us with comments and questions</a></li>
+<li><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading12">US residents&rsquo; rights</a></li>
+<li><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading13">UK, EU, &amp; EMEA residents&rsquo; rights</a></li>
+<li><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading14">Brazilian residents&rsquo; rights</a></li>
+<li><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/#heading15">Definitions of terms in the policy</a></li>
+</ul>
+                                </div>
+
+                                <footer class="animated bounceInUp">
+
+                                    <p class="callout"> Learn More </p>
+
+                                    <a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/" class="link-copy">Privacy Policy</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <header class="fade-content-in">
+
+                                    <object type="image/svg+xml" data="https://privacy.thewaltdisneycompany.com/app/uploads/2019/05/Online-Tracking-Technologies-and-Advertising.svg" title="Online Tracking Technologies and Advertising" class="illustration"></object>
+                                    <h1>ONLINE TRACKING TECHNOLOGIES AND ADVERTISING</h1>
+                                </header>
+
+                                <div class="article fade-content-in">
+                                    <p>We and certain service providers operating on our behalf collect information about your activity, or activity on devices associated with you, on our sites and applications using tracking technologies such as cookies, Flash cookies, pixels, tags, software development kits, application program interfaces, and Web beacons.</p>
+                                </div>
+
+                                <footer class="fade-content-in">
+
+                                    <p class="callout"> Learn More </p>
+
+                                    <a href="https://privacy.thewaltdisneycompany.com/en/privacy-controls/online-tracking-and-advertising/" class="link-copy">ONLINE TRACKING TECHNOLOGIES AND ADVERTISING</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <header class="fade-content-in">
+
+                                    <object type="image/svg+xml" data="https://privacy.thewaltdisneycompany.com/app/uploads/2019/05/Childrens-Privacy-Policy.svg" title="Children's Privacy Policy" class="illustration"></object>
+                                    <h1>Children&rsquo;s Privacy Policy</h1>
+                                </header>
+
+                                <div class="article fade-content-in">
+                                    <p>The Walt Disney Family of Companies (&ldquo;TWDC&rdquo;) is committed to protecting the privacy of children who use our sites and applications.</p>
+                                </div>
+
+                                <footer class="fade-content-in">
+
+                                    <p class="callout"> Learn More </p>
+
+                                    <a href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/" class="link-copy">Children&rsquo;s Privacy Policy</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <header class="fade-content-in">
+
+                                    <object type="image/svg+xml" data="https://privacy.thewaltdisneycompany.com/app/uploads/2016/09/support.svg" title="" class="illustration"></object>
+                                    <h1>Contact Us</h1>
+                                </header>
+
+                                <div class="article fade-content-in">
+                                                                    </div>
+
+                                <footer class="fade-content-in">
+
+                                    <p class="callout"> Learn More </p>
+
+                                    <a href="https://privacy.thewaltdisneycompany.com/en/support/" class="link-copy">Contact Us</a>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+                    </main><!-- /.main -->
+            </div><!-- /.content -->
+</div><!-- /.wrap -->
+<footer id="footer">
+
+         <div class="logo-band">                 <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2019/10/disney.svg" alt="Disney" title="Disney">
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/09/Hulu-footer.svg" alt="Hulu" title="Hulu">
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2019/10/lucasfilm.svg" alt="LucasFilm" title="LucasFilm">
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2019/10/marvel.svg" alt="Marvel" title="Marvel">
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2020/10/NG_logo_greyscale_version.svg" alt="natgeo" title="natgeo">
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2021/09/abc-logo-v2-gray.svg" alt="abc" title="abc">
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2019/10/espn.svg" alt="ESPN" title="ESPN">
+                    </div>
+                </div>
+                            <div class="col">
+                    <div class="logo-wrap">
+                        <img src="https://privacy.thewaltdisneycompany.com/app/uploads/2022/04/FX_BrandQuilt_Logo_350x185-_04.12.22-footer.svg" alt="FX" title="FX">
+                    </div>
+                </div>
+                        </div>
+    
+    <div class="site-info">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 blank"></div>
+                <div class="col-lg-6 col-md-6 logo-wrap"><a href="/" id="footer-logo" title="Disney"></a></div>
+                <div class="col-lg-3 col-md-3 copyright">
+                    <section class="widget text-2 widget_text">			<div class="textwidget">&copy; Disney.  All rights reserved</div>
+		</section><section class="widget nav_menu-2 widget_nav_menu"><div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-13977" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13977"><a href="http://preferences-mgr.truste.com/?type=disneycolor&amp;affiliateId=115">Interest-Based Ads</a></li>
+<li id="menu-item-13983" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13983"><a href="https://privacy.thewaltdisneycompany.com/en/for-parents/childrens-online-privacy-policy/">Children&rsquo;s Online Privacy Policy</a></li>
+<li id="menu-item-13986" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13986"><a href="https://privacy.thewaltdisneycompany.com/en/current-privacy-policy/your-us-state-privacy-rights/">Your US State Privacy Rights</a></li>
+<li id="menu-item-13974" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13974"><a href="https://disneytermsofuse.com/">Terms of Use</a></li>
+<li id="menu-item-13980" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-13980"><a href="https://privacy.thewaltdisneycompany.com/">Privacy Policy</a></li>
+<li id="menu-item-24684" class="ddm-oti-pref-ctr-link menu-item menu-item-type-custom menu-item-object-custom menu-item-24684"><a href="https://privacyportal-de.onetrust.com/webform/64f077b5-2f93-429f-a005-c0206ec0738e/0a4f1f0b-7130-421f-971d-ef578c0bce6d">Do Not Sell or Share My Personal Information</a></li>
+</ul></div></section>                    <ul class="menu">
+                        <li>
+                            <button class="btn-link print-screen"><i class="fa fa-print"></i> Print Page</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<a href="#" class="back-to-top"><span class="sr-only">Back to Top</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 58.4 58.4"><title>back-to-top</title>
+        <circle cx="29.2" cy="29.2" r="29.2" style="fill:#3e495a"></circle>
+        <path d="M25.3,26.5l3.9-3.9V39.4a0.8,0.8,0,0,0,1.6,0V22.6l3.9,3.9a1.14,1.14,0,0,0,.6.3,0.71,0.71,0,0,0,.6-0.3,0.78,0.78,0,0,0,0-1.1L30.7,20a1.14,1.14,0,0,0-.6-0.3,0.71,0.71,0,0,0-.6.3l-5.3,5.3a0.78,0.78,0,0,0,0,1.1C24.3,26.8,24.9,26.8,25.3,26.5Z" transform="translate(-0.8 -0.8)" style="fill:#fff"></path>
+    </svg>
+</a>
+<script type="text/javascript" id="ddm-oti-client-script-js-extra">
+/* <![CDATA[ */
+var otiData = {"linkClass":"ddm-oti-pref-ctr-link"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/plugins/onetrust-integration/assets/dist/js/scripts-0cfe8dfd.js" id="ddm-oti-client-script-js"></script>
+<script type="text/javascript" id="longdesc.button-js-extra">
+/* <![CDATA[ */
+var wparest = {"url":"https:\/\/privacy.thewaltdisneycompany.com\/wp-json\/wp\/v2\/media","text":"<span class=\"dashicons dashicons-media-text\" aria-hidden=\"true\"><\/span><span class=\"screen-reader\">Long Description<\/span>"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/plugins/wp-accessibility/js/longdesc.button.js" id="longdesc.button-js"></script>
+<script type="text/javascript" id="wp-accessibility-js-extra">
+/* <![CDATA[ */
+var wpa = {"skiplinks":{"enabled":false,"output":""},"target":"1","tabindex":"1","underline":{"enabled":false,"target":"a"},"dir":"ltr","lang":"en-US"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/plugins/wp-accessibility/js/wp-accessibility.js" id="wp-accessibility-js"></script>
+<script type="text/javascript" id="app-js-extra">
+/* <![CDATA[ */
+var PCJSSTR = {"str1":"OneID language and Polylang language don't match. Would you like to select a country \/ language?","str2":"OneID country and country_slug cookie don't match.  Would you like to select a country \/ language?","str3":"Search Languages","str4":"Search Countries","str5":"Close Alert","yes":"Yes","no":"No","LangGetUri":"https:\/\/privacy.thewaltdisneycompany.com\/app\/themes\/privacycenter\/lib\/get-languages.php","langHandleUri":"https:\/\/privacy.thewaltdisneycompany.com\/app\/themes\/privacycenter\/lib\/language-handler.php"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://privacy.thewaltdisneycompany.com/app/themes/privacycenter/assets/dist/js/app-6fe736b3.js" id="app-js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"129fe16bc0","applicationID":"191794594,101161962","transactionName":"ZQZbZ0sDWEZWUU0MCVxMbEFQTUFFGFtXAQNKTUlbSQ==","queueTime":0,"applicationTime":609,"atts":"SUFYEQMZS0g=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
